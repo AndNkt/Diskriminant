@@ -14,11 +14,11 @@ if (a!==0 && b!==0 && c!==0){
   console.log(a,b,c);
   if (deskrmnt>0){
     let sqrtdeskrmnt=Math.sqrt(deskrmnt);
-    let x1=(((-(b))-sqrtdeskrmnt)/2*a);
-    let x2=(((-(b))+sqrtdeskrmnt)/2*a);
+    let x1=(((-(b))-sqrtdeskrmnt)/(2*a));
+    let x2=(((-(b))+sqrtdeskrmnt)/(2*a));
     return [x1,x2];
     }
-    else if(deskrmnt===0){ return ((-(b))/2*a)}
+    else if(deskrmnt===0){ return ((-(b))/(2*a))}
    else return undefined;}
    
  else if(a!==0 && b==0 && c==0) return [0];//a=1 b=0 c=0
