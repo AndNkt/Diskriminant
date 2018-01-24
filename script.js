@@ -21,7 +21,7 @@ if (a!==0 && b!==0 && c!==0){
     else if(deskrmnt===0){ 
     	x1=((-(b))/(2*a))
     	return x1}
-   else return undefined;}
+   else return "Equ unsolved or have no Re only Img roots";}
    
  else if(a!==0 && b==0 && c==0) return [0];//a=1 b=0 c=0
  else if(a!==0 && c!==0 && b===0){
