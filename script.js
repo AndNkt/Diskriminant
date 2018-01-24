@@ -3,11 +3,8 @@ var d,e,f,s;
 d=prompt("Input a: Ax2+bx+c=0");
 e=prompt("Input b: ax2+Bx+c=0");
 f=prompt("Input c: ax2+bx+C=0");
-
 s=solveQuadratic(d,e,f);
-
 alert(s);
-
 function solveQuadratic(a, b, c) {
 if (a!==0 && b!==0 && c!==0){
   var deskrmnt=(b*b)-4*(a*c);
@@ -21,7 +18,7 @@ if (a!==0 && b!==0 && c!==0){
     else if(deskrmnt===0){ 
     	x1=((-(b))/(2*a))
     	return x1}
-   else return "Equ unsolved or have no Re only Img roots";}
+   else {return x1="Equ unsolved or have no Re only Img roots"};}
    
  else if(a!==0 && b==0 && c==0) return [0];//a=1 b=0 c=0
  else if(a!==0 && c!==0 && b===0){
