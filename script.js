@@ -4,11 +4,18 @@ d=prompt("Input a: Ax2+bx+c=0");
 e=prompt("Input b: ax2+Bx+c=0");
 f=prompt("Input c: ax2+bx+C=0");
 s=solveQuadratic(d,e,f);
+
 console.log(s);
 alert(s);
+
 function solveQuadratic(a, b, c) {
 if (a!==0 && b!==0 && c!==0){
-  var deskrmnt=(b*b)-4*(a*c);
+  var deskrmnt=findDes(a,b,c);
+  
+  function findDes(a,b,c){
+    return (b*b)-4*(a*c);
+  }
+  
   console.log(a,b,c);
   if (deskrmnt>0){
     let sqrtdeskrmnt=Math.sqrt(deskrmnt);
