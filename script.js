@@ -27,7 +27,7 @@ function solveQuadratic(a, b, c) {
     	x1=((-(b))/(2*a))
     	return x1}
      else {
-          return undefined};
+          return x1="No roots or Equ have no Re only with Img"};
   }
    
 
